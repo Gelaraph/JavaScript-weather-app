@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;display=swap"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="app-container" id="contain" data-theme="light">
+        <div class="app-top-bar">
+          <button class="button button-small">
+            <i class="fas fa-chevron-left"></i>
+          </button>
+          <h1 class="app-heading">Weather App</h1>
+          <button class="button button-small" id="toogler">
+            <i class="fas fa-light fa-moon" id="toogler-icon"></i>
+          </button>
+        </div>
+        <div class="app-content">
+          <form action="" onsubmit="return false">
+            <div class="button button-block big">
+              <input
+                type="text"
+                class="search"
+                id="search"
+                placeholder="Search by city name"
+              />
+              <button class="button button-block btn" type="submit">
+                <div class="button button-small">
+                  <i class="fas fa-chevron-right"></i>
+                </div>
+              </button>
+            </div>
+            <p class="error"></p>
+          </form>
+        </div>
+        <div class="button button-dial">
+          <span class="button-dial-spoke"></span>
+          <span class="button-dial-spoke"></span>
+          <span class="button-dial-spoke"></span>
+          <span class="button-dial-spoke"></span>
+          <span class="button-dial-spoke"></span>
+          <span class="button-dial-spoke"></span>
+          <div class="button-dial-top"></div>
+          <div class="button-dial-label">
+            <div class="temp">
+              <i class="fas fa-light fa-temperature-half"></i> 25
+              <span>°C</span>
+            </div>
+          </div>
+        </div>
+        <div class="flex-button-container">
+          <button class="button button-large" style="padding-top: 5px">
+            <div class="icon">
+              <img src="" alt="" class="weather-icon" />
+            </div>
+            <div class="location">
+              <h2 class="city">Abuja, NG</h2>
+              <p class="date" style="font-size: 8px">Tuesday, Nov 15 2022</p>
+            </div>
+          </button>
+          <button class="button button-large" style="padding-top: 15px">
+            <div class="current">
+              <h2 class="weather">Weather: Sunny</h2>
+              <p class="temp-range" style="font-size: 8px">
+                Temp Range: 10°C / 15°C
+              </p>
+            </div>
+          </button>
+        </div>
+        <!-- end -->
+      </div>
+    </div>
+
+    <script src="main.js"></script>
+  </body>
+</html>
